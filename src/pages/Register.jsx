@@ -7,7 +7,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const [err, setErr] = useState();
+  const [err, setErr] = useState(false);
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
